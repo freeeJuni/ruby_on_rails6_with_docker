@@ -29,6 +29,7 @@ RUN mkdir -p /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 WORKDIR /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 COPY Gemfile /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp/Gemfile
 COPY Gemfile.lock /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp/Gemfile.lock
+RUN bundle update --bundler
 RUN bundle install
 COPY . /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 
