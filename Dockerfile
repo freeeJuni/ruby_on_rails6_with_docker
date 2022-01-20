@@ -8,6 +8,7 @@ echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.lis
 apt-get update && apt-get install -y yarn
 
 RUN apt-get update -qq && apt-get install -y nodejs yarn
+RUN npm install --lts && npm install -g yarn
 RUN mkdir -p /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 WORKDIR /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 COPY Gemfile /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp/Gemfile
