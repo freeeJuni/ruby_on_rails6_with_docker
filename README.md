@@ -1,7 +1,7 @@
 # ruby_on_rails6_with_docker
 ```
-git clone git@github.com:freeeJuni/ruby_on_rails6_with_docker.git
-
+git clone git@github.com.company:freeeJuni/ruby_on_rails6_with_docker.git
+cd ruby_on_rails6_with_docker
 asdf local nodejs 14.18.2
 asdf local ruby 2.7.0
 asdf local packer 1.6.1
