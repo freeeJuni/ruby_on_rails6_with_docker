@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
 
-rm -f /myapp/tmp/pids/server.pid
+rm -f /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp/tmp/pids/server.pid
 
 exec "$@"
