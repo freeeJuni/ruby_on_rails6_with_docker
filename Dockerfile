@@ -34,7 +34,7 @@ RUN bundle install
 COPY . /Users/lee-uijun/Development/Docker/ruby_on_rails6/myapp
 
 RUN yarn install --check-files
-RUN yarn install webpacker
+RUN yarn add webpacker
 RUN bundle exec rails webpacker:compile
 
 # Add a script to be executed every time the container starts.
