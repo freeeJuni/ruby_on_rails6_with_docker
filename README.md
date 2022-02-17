@@ -32,4 +32,6 @@ manual
   bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib"
   bundle update --bundler
   
+
 ```  
+  
