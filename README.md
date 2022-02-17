@@ -18,3 +18,5 @@ reference
 <p>
 https://zenn.dev/tmasuyama1114/articles/rails-docker-6x-how-to#webpacker%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB
 https://blog.codecamp.jp/docker-ruby-on-rails-mac
+  
+https://qiita.com/nsy_13/items/9fbc929f173984c30b5d  
