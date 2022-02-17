@@ -35,3 +35,44 @@ manual
 
 ```  
   
+  
+```  
+データベースファイルの修正
+上記実行後、config/database.yml ファイルを下記の通りにまるっと修正します。
+
+default: &default
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password:
+  host: localhost
+
+development:
+  <<: *default
+  database: myapp_development
+  host: db
+  username: root
+  password: password
+
+test:
+  <<: *default
+  database: myapp_test
+  host: db
+  username: root
+  password: password
+
+データベースを作成
+$ docker-compose run web rails db:create
+
+Webpackerをインストール
+Rails 6系から Webpacker が必要となっているため、webサーバのコンテナにwebpackerをインストールします。
+
+$ docker-compose run web rails webpacker:install 
+
+docker-compose でコンテナを起動
+$ docker-compose up -d
+
+アクセスして起動を確認
+ブラウザから localhost:3000 にアクセスし、Rails の初期画面が表示されることを確認しましょう。
+ ``` 
