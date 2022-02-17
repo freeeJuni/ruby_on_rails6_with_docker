@@ -20,3 +20,16 @@ https://zenn.dev/tmasuyama1114/articles/rails-docker-6x-how-to#webpacker%E3%82%9
 https://blog.codecamp.jp/docker-ruby-on-rails-mac
   
 https://qiita.com/nsy_13/items/9fbc929f173984c30b5d  
+
+manual
+```
+  docker-compose run web rails new . --force --no-deps --database=mysql
+  
+  docker-compose build
+  
+  (if error)
+  gem install bundler:1.17.2
+  bundle config --local build.mysql2 "--with-ldflags=-L/usr/local/opt/openssl/lib"
+  bundle update --bundler
+  
+```  
