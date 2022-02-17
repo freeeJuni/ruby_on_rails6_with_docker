@@ -75,4 +75,6 @@ $ docker-compose up -d
 
 アクセスして起動を確認
 ブラウザから localhost:3000 にアクセスし、Rails の初期画面が表示されることを確認しましょう。
+  
+$ docker-compose down  
  ``` 
