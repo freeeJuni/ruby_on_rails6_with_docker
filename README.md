@@ -49,18 +49,23 @@ test:
 ```
 
 #### Create the database
+```
 juni% docker-compose run web rails db:create
-
+```
 #### Webpacker installation
+```
 juni% docker-compose run web rails webpacker:install 
-
+```
 #### Starting Containers by docker-compose
+```
 juni% docker-compose up -d
-
+```
 #### Check your browser
+```
 inputting "localhost:3000" in your browser.
-
+```
 #### Container down
+```
 juni% docker-compose down  
  ``` 
 
